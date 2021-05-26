@@ -22,12 +22,13 @@ public class EmployeePayrollService {
     {
         System.out.println("Enter Employee ID: ");
         int id = consoleInputReader.nextInt();
-        System.out.println("Enter Employee Name ");
+        System.out.println("Enter Employee name ");
         String name = consoleInputReader.next();
-        System.out.println("Enter Employee Salary ");
+        System.out.println("Enter Employee salary ");
         double salary = consoleInputReader.nextDouble();
         employeePayrollList.add(new EmployeePayrollData(id, name, salary));
     }
+
     private void writeEmployeePayrollData() //write data on console
     {
         System.out.println("\nWriting Employee Payroll Roaster to Console\n" + employeePayrollList);
